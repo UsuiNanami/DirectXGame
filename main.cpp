@@ -10,7 +10,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 	//====================================
 	// 初期化処理
 	//====================================
-	KamataEngine::Initialize(L"LC1C_05_ウスイ_ナナミ_AL2_4_1");
+	KamataEngine::Initialize(L"LC1C_05_ウスイ_ナナミ_タイトル");
 
 	DirectXCommon* dxCommon = DirectXCommon::GetInstance(); // DirectXCommonインスタンスの取得
 
@@ -44,10 +44,10 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 	// 解放処理
 	//====================================
 	// --- ゲームシーンの解放 ---
-	delete gameScene; 
+	delete gameScene;
 
 	// --- nullptrの代入 ---
-	gameScene = nullptr; 
+	gameScene = nullptr;
 
 	//====================================
 	// 終了処理
