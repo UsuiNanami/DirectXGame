@@ -1,5 +1,6 @@
 #pragma once
 #include "KamataEngine.h"
+#include "Player.h"
 
 //====================================
 // ゲームシーン
@@ -17,4 +18,22 @@ public:
 
 	// --- 描画処理 ---
 	void Draw();
+
+private: // privateはGameScene内でしか使わない
+// --- テクスチャハンドル  ---
+uint32_t textureHandle_ = 0;
+// スプライト
+KamataEngine::Sprite* sprite_ = nullptr;
+
+// 3Dモデルデータ
+KamataEngine::Model* model_ = nullptr;
+
+// --- カメラ ---
+KamataEngine::Camera camera_;
+
+// 自キャラをゲームシーンに持たせる
+Player* player_ = nullptr;
+
+
 };
+
