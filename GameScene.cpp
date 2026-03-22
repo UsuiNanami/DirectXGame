@@ -49,7 +49,7 @@ void GameScene::Update() {
 void GameScene::Draw() {
 	// モデル描画の前処理
 	KamataEngine::Model::PreDraw();
-	// 自キャラの描画関数を呼び出す（引数は不要になります）
+	// 自キャラの描画関数を呼び出す
 	player_->Draw();
 	// モデル描画後処理
 	KamataEngine::Model::PostDraw();

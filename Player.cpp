@@ -8,7 +8,7 @@ void Player::Initialize(KamataEngine::Model* model, uint32_t textureHandle, Kama
 	assert(model);
 	assert(camera);
 
-	// 引数の内容をメンバ変数に記録 (画像「メンバ変数を追加する」より)
+	// 引数の内容をメンバ変数に記録
 	model_ = model;
 	textureHandle_ = textureHandle;
 	camera_ = camera;
