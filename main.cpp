@@ -10,7 +10,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 	//====================================
 	// 初期化処理
 	//====================================
-	KamataEngine::Initialize(L"LC1C_05_ウスイ_ナナミ_タイトル");
+	KamataEngine::Initialize(L"LE2C_03_ウスイ_ナナミ_タイトル");
 
 	DirectXCommon* dxCommon = DirectXCommon::GetInstance(); // DirectXCommonインスタンスの取得
 
